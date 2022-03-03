@@ -1,0 +1,10 @@
+.send-tweet {
+  // es como poner .send-tweet__open-modal
+  &__open-modal {
+    position: fixed !important;
+    right: 30px;
+    bottom: 30px;
+    background-color: rgb(41, 168, 223) !important;
+    z-index: 1;
+  }
+}

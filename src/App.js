@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// importamos MaterialUI
+import { Container, Snackbar } from "@mui/material";
+// importo el header
+import Header from "./components/Header/index";
+// importo el header
+import SendTweet from "./components/SendTweet/index";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container 
+    className="tweets-simulator" 
+    maxWidth={false}>
+      <Header />
+      <SendTweet />
+    </Container>
   );
 }
 
